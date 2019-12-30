@@ -5,12 +5,12 @@
 	$ git init
 	$ ls -ah
 3.把文件添加到版本库 
-第一步：用命令 git add <ffile> 告诉git，把文件添加到仓库       
+	第一步：用命令 git add <ffile> 告诉git，把文件添加到仓库       
 	$ git add readme.txt
-第二步：用命令 git commit -m <message> 告诉git，把文件提交到仓库
+	第二步：用命令 git commit -m <message> 告诉git，把文件提交到仓库
 	$ git commit -m "wrote a readme file"
 4.创建身份标识
-	$ git config --global user.email "431592711@qq.com"
+	$ git config --global user.email "xxxxxxxx@qq.com"
 	$ git config --global user.name "Regius"
 5.查看工作区的状态
 	$ git status
@@ -33,6 +33,10 @@
 	场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset 		HEAD <file>，就回到了场景1，第二步按场景1操作。
 
 	场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库。
+	7)删除文件
+	$ git rm readme.txt
+	$ git commit -m "remove readme.txt "
+ 
 
 
 
