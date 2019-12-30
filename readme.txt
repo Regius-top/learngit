@@ -36,15 +36,18 @@
 	7)删除文件
 	$ git rm readme.txt
 	$ git commit -m "remove readme.txt "
- 
-
-
-
-
-
-
-
-
+ 7.关联远库(一次)
+	$ git remote add origin https://github.com/Regius-top/learngit.git
+	关联后，第一次推送master分支的所有内容使用
+	$ git push -u origin master
+	此后，更新推送
+	$ git push origin master
+8.克隆本地库
+	$ git clone git@github.com/Regius-top/learngit.git
+9.设置标签
+	$ git tag <tagname>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+	$ git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+	$ git tag可以查看所有标签。
 
 
 
